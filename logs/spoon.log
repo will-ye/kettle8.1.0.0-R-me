@@ -1,0 +1,13 @@
+java.lang.UnsatisfiedLinkError: Could not load SWT library. Reasons: 
+	no swt-gtk-4623 in java.library.path
+	no swt-gtk in java.library.path
+	Can't load library: C:\Users\Think\.swt\lib\win32\x86_64\swt-gtk-4623.dll
+	Can't load library: C:\Users\Think\.swt\lib\win32\x86_64\swt-gtk.dll
+
+	at org.eclipse.swt.internal.Library.loadLibrary(Unknown Source)
+	at org.eclipse.swt.internal.Library.loadLibrary(Unknown Source)
+	at org.eclipse.swt.internal.C.<clinit>(Unknown Source)
+	at org.eclipse.swt.internal.Converter.wcsToMbcs(Unknown Source)
+	at org.eclipse.swt.internal.Converter.wcsToMbcs(Unknown Source)
+	at org.eclipse.swt.widgets.Display.<clinit>(Unknown Source)
+	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:658)

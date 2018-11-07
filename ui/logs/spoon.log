@@ -1,0 +1,64 @@
+2018/11/07 13:39:23 - DBCache - The database cache doesn't exist yet.
+2018/11/07 13:39:28 - Spoon - 试图打开最近使用的文件.
+2018/11/07 14:43:40 - Spoon - Using legacy execution engine
+2018/11/07 14:43:40 - Spoon - 转换已经打开.
+2018/11/07 14:43:40 - Spoon - 正在打开转换 [connectMY]...
+2018/11/07 14:43:40 - Spoon - 开始执行转换.
+2018/11/07 14:43:40 - connectMY - 为了转换解除补丁开始  [connectMY]
+2018/11/07 14:43:41 - 业务oper表.0 - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : An error occurred, processing will be stopped: 
+2018/11/07 14:43:41 - 业务oper表.0 - Error occurred while trying to connect to the database
+2018/11/07 14:43:41 - 业务oper表.0 - 
+2018/11/07 14:43:41 - 业务oper表.0 - Driver class 'org.gjt.mm.mysql.Driver' could not be found, make sure the 'MySQL' driver (jar file) is installed.
+2018/11/07 14:43:41 - 业务oper表.0 - org.gjt.mm.mysql.Driver
+2018/11/07 14:43:41 - connectMY - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : Something went wrong while trying to safe stop the transformation: 
+2018/11/07 14:43:41 - connectMY - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2018/11/07 14:43:41 - connectMY - Unable to get database metadata from this database connection
+2018/11/07 14:43:41 - connectMY -  at java.lang.Thread.run (Thread.java:748)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.step.StepInitThread.run (StepInitThread.java:69)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.steps.tableinput.TableInput.init (TableInput.java:356)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.step.BaseStep.stopAll (BaseStep.java:3008)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.Trans.stopAll (Trans.java:1910)
+2018/11/07 14:43:41 - connectMY -  at java.util.ArrayList.forEach (ArrayList.java:1249)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.Trans.lambda$stopAll$3 (Trans.java:1910)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.Trans.stopStep (Trans.java:1926)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.trans.steps.tableinput.TableInput.stopRunning (TableInput.java:299)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.core.database.Database.cancelQuery (Database.java:725)
+2018/11/07 14:43:41 - connectMY -  at org.pentaho.di.core.database.Database.getDatabaseMetaData (Database.java:2916)
+2018/11/07 14:43:41 - connectMY - 
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2918)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.core.database.Database.cancelQuery(Database.java:725)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.steps.tableinput.TableInput.stopRunning(TableInput.java:299)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.Trans.stopStep(Trans.java:1926)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.Trans.lambda$stopAll$3(Trans.java:1910)
+2018/11/07 14:43:41 - connectMY - 	at java.util.ArrayList.forEach(ArrayList.java:1249)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.Trans.stopAll(Trans.java:1910)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.step.BaseStep.stopAll(BaseStep.java:3008)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.steps.tableinput.TableInput.init(TableInput.java:356)
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.trans.step.StepInitThread.run(StepInitThread.java:69)
+2018/11/07 14:43:41 - connectMY - 	at java.lang.Thread.run(Thread.java:748)
+2018/11/07 14:43:41 - connectMY - Caused by: java.lang.NullPointerException
+2018/11/07 14:43:41 - connectMY - 	at org.pentaho.di.core.database.Database.getDatabaseMetaData(Database.java:2916)
+2018/11/07 14:43:41 - connectMY - 	... 10 more
+2018/11/07 14:43:41 - 业务oper表.0 - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : 错误初始化步骤[业务oper表]
+2018/11/07 14:43:41 - 插入 / 更新.0 - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : An error occurred during initialization, processing will be stopped: 
+2018/11/07 14:43:41 - 插入 / 更新.0 - Error occurred while trying to connect to the database
+2018/11/07 14:43:41 - 插入 / 更新.0 - 
+2018/11/07 14:43:41 - 插入 / 更新.0 - Driver class 'org.gjt.mm.mysql.Driver' could not be found, make sure the 'MySQL' driver (jar file) is installed.
+2018/11/07 14:43:41 - 插入 / 更新.0 - org.gjt.mm.mysql.Driver
+2018/11/07 14:43:41 - 插入 / 更新.0 - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : 错误初始化步骤[插入 / 更新]
+2018/11/07 14:43:41 - connectMY - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : 步骤 [业务oper表.0] 初始化失败!
+2018/11/07 14:43:41 - connectMY - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : 步骤 [插入 / 更新.0] 初始化失败!
+2018/11/07 14:43:41 - 业务oper表.0 - Finished reading query, closing connection.
+2018/11/07 14:43:41 - Spoon - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : connectMY: preparing transformation execution failed
+2018/11/07 14:43:41 - Spoon - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : org.pentaho.di.core.exception.KettleException: 
+2018/11/07 14:43:41 - Spoon - 无法初始化至少一个步骤.  执行无法开始!
+2018/11/07 14:43:41 - Spoon - 
+2018/11/07 14:43:41 - Spoon - 
+2018/11/07 14:43:41 - Spoon - 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:1163)
+2018/11/07 14:43:41 - Spoon - 	at org.pentaho.di.ui.spoon.trans.TransGraph$30.run(TransGraph.java:4293)
+2018/11/07 14:43:41 - Spoon - 	at java.lang.Thread.run(Thread.java:748)
+2018/11/07 14:43:41 - connectMY - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : 错误被检测到!
+2018/11/07 14:43:41 - connectMY - ERROR (version Unknown, build 0 from 2018/11/07 13:39:11.571 by Think) : 错误被检测到!
+2018/11/07 14:57:39 - Spoon - 退出应用.
+2018/11/07 14:57:39 - Spoon - Spoon  已经结束.
+stopping
